@@ -12,5 +12,6 @@ namespace ESCP_Skyshards
         }
 
         public static ThingDef ESCP_SkyshardBuilding;
+        public static ThingDef ESCP_SkyshardSculpture;
     }
 }

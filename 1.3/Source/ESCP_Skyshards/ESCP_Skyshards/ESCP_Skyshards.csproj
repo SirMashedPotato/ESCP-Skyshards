@@ -54,14 +54,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompUse\CompUseEffect_UseSkyshard.cs" />
+    <Compile Include="Comp\Comp_SkyshardSculpture.cs" />
     <Compile Include="DefOf\RecordDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_SkyshardStarfall.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestSites\GenStep_SkyshardSite.cs" />
     <Compile Include="QuestSites\SitePartWorker_SkyshardSite.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Comp\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -37,12 +37,15 @@
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<rotatable>true</rotatable>
 		<statBases>
-			<Beauty>30</Beauty>
+			<Beauty>80</Beauty>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>4</Mass>
 			<Flammability>0</Flammability>
-			<MarketValue>50</MarketValue>
+			<MarketValue>800</MarketValue>
 		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
 		<fillPercent>0.5</fillPercent>
 		<destroyable>true</destroyable>
 		<useHitPoints>true</useHitPoints>

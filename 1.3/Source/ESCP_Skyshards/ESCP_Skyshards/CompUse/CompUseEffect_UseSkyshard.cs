@@ -42,7 +42,7 @@ namespace ESCP_Skyshards
             SkillRecord sr = p.skills.skills.Find(x => x.def == skillDef);
             if (sr == null)
             {
-                failReason = "ERR";
+                failReason = "ERR: pawn doesn't have that skill at all";
                 return false;
             }
             if (sr.TotallyDisabled)
@@ -64,9 +64,18 @@ namespace ESCP_Skyshards
             usedBy.records.Increment(RecordDefOf.ESCP_SkyshardsUsed);
             FleckMaker.AttachedOverlay(usedBy, FleckDefOf.PsycastAreaEffect, Vector3.zero, 1f, -1f);
             SkillRecord sr = usedBy.skills.skills.Find(x => x.def == skillDef);
+
             //ensuring the added levels don't go over 20
             int temp = sr.levelInt + skillLevel;
             sr.levelInt = Mathf.Clamp(temp, 1, 20);
+
+            //creating inert skyshard
+            Thing thing = ThingMaker.MakeThing(ThingDefOf.ESCP_SkyshardSculpture);
+            thing.TryGetComp<Comp_SkyshardSculpture>().Setup(usedBy, skillDef, skillLevel);
+            thing = thing.MakeMinified();
+            GenPlace.TryPlaceThing(thing, parent.Position, parent.Map, ThingPlaceMode.Direct);
+
+            Messages.Message("ESCP_Skyshard_UsedMessage".Translate(usedBy.NameFullColored, skillLevel, skillDef.label), thing, MessageTypeDefOf.PositiveEvent, false);
         }
     }
 }
