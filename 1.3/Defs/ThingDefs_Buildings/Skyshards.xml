@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>ESCP_SkyshardBuilding</defName>
 		<label>skyshard</label>
-		<description>A strange crystalline shard, fallen from the stars. Each skyshard contains within it untold knowledge, which can be gained by interacting with the shard.</description>
+		<description>A strange crystalline shard, fallen from the stars. Each skyshard contains within it untold knowledge, which can be gained by interacting with the shard.\n\nA strange energy prevents the skyshard from being moved.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Misc/ESCP_Skyshard</texPath>

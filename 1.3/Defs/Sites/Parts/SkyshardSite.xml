@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SitePartDef>
+		<defName>ESCP_SkyshardLandingSite</defName>
+		<label>skyshard impact site</label>
+		<description>A site where a skyshard has impacted.</description>
+		<workerClass>ESCP_Skyshards.SitePartWorker_SkyshardSite</workerClass>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<expandingIconTexture>World/WorldObjects/ESCP_Skyshard_Icon</expandingIconTexture>
+		<handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+		<tags>
+		  <li>ESCP_SkyshardLandingSite</li>
+		</tags>
+	</SitePartDef>
+
+	<GenStepDef>
+		<defName>ESCP_SkyshardLandingSite</defName>
+		<linkWithSite>ESCP_SkyshardLandingSite</linkWithSite>
+		<order>500</order>
+		<genStep Class="ESCP_Skyshards.GenStep_SkyshardSite">
+		</genStep>
+	</GenStepDef>
+
+</Defs>

@@ -19,16 +19,6 @@
 							<defName>ESCP_AchievementsTab</defName>
 							<label>ESCP</label>
 						</AchievementsExpanded.AchievementTabDef>
-						<!--
-						<AchievementsExpanded.Reward_MapIncident>
-							<defName>ESCP_RewardAshlanderJoins</defName>
-							<label>Dunmer Ashlander Joins</label>
-							<tab>ESCP_AchievementsTab</tab>
-							
-							<cost>150</cost>
-							<incident>ESCP_AshlanderJoins</incident>
-						</AchievementsExpanded.Reward_MapIncident>
-						-->
 
 						<!-- Stats -->
 						
@@ -36,7 +26,7 @@
 							<defName>ESCP_AchievementSkyshard_First</defName>
 							<label>Skyshard Novice</label>
 							<description>Have a pawn interact with a skyshard for the first time</description>
-							<bgtexPath>Achievements/ESCP_AchievementBackgroundSkyshards</bgtexPath>
+							<bgtexPath>Achievements/ESCP_AchievementBackground</bgtexPath>
 							<tab>ESCP_AchievementsTab</tab>
 							<tracker Class="AchievementsExpanded.RecordEventTracker">
 								<def>ESCP_SkyshardsUsed</def>
@@ -50,7 +40,7 @@
 							<defName>ESCP_AchievementSkyshard_Many</defName>
 							<label>Skyshard Adept</label>
 							<description>Have a pawn interact with a skyshard for the fifth time</description>
-							<bgtexPath>Achievements/ESCP_AchievementBackgroundSkyshards</bgtexPath>
+							<bgtexPath>Achievements/ESCP_AchievementBackground</bgtexPath>
 							<tab>ESCP_AchievementsTab</tab>
 							<tracker Class="AchievementsExpanded.RecordEventTracker">
 								<def>ESCP_SkyshardsUsed</def>
@@ -64,7 +54,7 @@
 							<defName>ESCP_AchievementSkyshard_More</defName>
 							<label>Skyshard Master</label>
 							<description>Have a pawn interact with a skyshard for the tenth time</description>
-							<bgtexPath>Achievements/ESCP_AchievementBackgroundSkyshards</bgtexPath>
+							<bgtexPath>Achievements/ESCP_AchievementBackground</bgtexPath>
 							<tab>ESCP_AchievementsTab</tab>
 							<tracker Class="AchievementsExpanded.RecordEventTracker">
 								<def>ESCP_SkyshardsUsed</def>

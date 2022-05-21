@@ -1,9 +1,7 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using RimWorld;
 using UnityEngine;
 using Verse.Sound;
-using Verse.AI;
 
 namespace ESCP_Skyshards
 {

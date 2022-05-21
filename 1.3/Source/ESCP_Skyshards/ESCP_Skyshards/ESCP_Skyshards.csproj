@@ -55,10 +55,13 @@
   <ItemGroup>
     <Compile Include="CompUse\CompUseEffect_UseSkyshard.cs" />
     <Compile Include="DefOf\RecordDefOf.cs" />
+    <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestSites\GenStep_SkyshardSite.cs" />
+    <Compile Include="QuestSites\SitePartWorker_SkyshardSite.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CompUse\Properties\" />
+    <Folder Include="Comp\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
