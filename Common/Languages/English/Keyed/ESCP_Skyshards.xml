@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+
+	<ESCP_Skyshard_Details>Attuned to: {0}\nStrength: {1}</ESCP_Skyshard_Details>
+	<ESCP_Skyshard_SkillDisabled>{0} is incapable of {1}</ESCP_Skyshard_SkillDisabled>
+	<ESCP_Skyshard_SkillMaxed>{0} has already mastered {1}</ESCP_Skyshard_SkillMaxed>
+
+</LanguageData>
