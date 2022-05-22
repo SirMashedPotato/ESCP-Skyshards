@@ -55,12 +55,17 @@
   <ItemGroup>
     <Compile Include="CompUse\CompUseEffect_UseSkyshard.cs" />
     <Compile Include="Comp\Comp_SkyshardSculpture.cs" />
+    <Compile Include="DefOf\IncidentDefOf.cs" />
     <Compile Include="DefOf\RecordDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
-    <Compile Include="IncidentWorker\IncidentWorker_SkyshardStarfall.cs" />
+    <Compile Include="ModSettings\Skyshards_Mod.cs" />
+    <Compile Include="ModSettings\Skyshards_ModSettings.cs" />
+    <Compile Include="Workers\IncidentWorker_SkyshardStarfall.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestSites\GenStep_SkyshardSite.cs" />
     <Compile Include="QuestSites\SitePartWorker_SkyshardSite.cs" />
+    <Compile Include="Workers\IncidentWorker_SkyshardStarfall_Reward.cs" />
+    <Compile Include="Workers\RitualAttachableOutcomeEffectWorker_TriggerSkyshardStarfall.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

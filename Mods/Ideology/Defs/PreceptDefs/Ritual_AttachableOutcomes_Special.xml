@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RitualAttachableOutcomeEffectDef>
+		<defName>ESCP_Skyshard_StarfallTriggered</defName>
+		<label>trigger mass skyshard impact</label>
+		<effectDesc>50% chance you will trigger a mass skyshard impact.</effectDesc>
+		<letterInfoText>You've triggered a mass skyshard impact.</letterInfoText>
+		<workerClass>ESCP_Skyshards.RitualAttachableOutcomeEffectWorker_TriggerSkyshardStarfall</workerClass>
+		<requiredMemeAny>
+		</requiredMemeAny>
+		<disallowedRituals>
+		  <li>FuneralStandard</li>
+		  <li>FuneralNoCorpse</li>
+		</disallowedRituals>
+	</RitualAttachableOutcomeEffectDef>
+  
+</Defs>

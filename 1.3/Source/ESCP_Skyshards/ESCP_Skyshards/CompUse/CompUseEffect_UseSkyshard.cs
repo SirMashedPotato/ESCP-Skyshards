@@ -25,7 +25,7 @@ namespace ESCP_Skyshards
 
             if (skillLevel == 0)
             {
-                skillLevel = Rand.Range(3, 6);
+                skillLevel = Rand.Range(Skyshards_ModSettings.MinLevelGained, Skyshards_ModSettings.MaxLevelGained);
                 skillDef = DefDatabase<SkillDef>.GetRandom();
             }
         }
@@ -50,7 +50,7 @@ namespace ESCP_Skyshards
                 failReason = "ESCP_Skyshard_SkillDisabled".Translate(p.Name, skillDef.label);
                 return false;
             }
-            if (sr.levelInt >= 20)
+            if (sr.levelInt >= 20 && !Skyshards_ModSettings.DisableSkillCap)
             {
                 failReason = "ESCP_Skyshard_SkillMaxed".Translate(p.Name, skillDef.label);
                 return false;
@@ -66,16 +66,20 @@ namespace ESCP_Skyshards
             SkillRecord sr = usedBy.skills.skills.Find(x => x.def == skillDef);
 
             //ensuring the added levels don't go over 20
+            bool flag = Skyshards_ModSettings.DisableSkillCap;
             int temp = sr.levelInt + skillLevel;
-            sr.levelInt = Mathf.Clamp(temp, 1, 20);
+            sr.levelInt = !flag ? Mathf.Clamp(temp, 1, 20) : temp;
 
             //creating inert skyshard
-            Thing thing = ThingMaker.MakeThing(ThingDefOf.ESCP_SkyshardSculpture);
-            thing.TryGetComp<Comp_SkyshardSculpture>().Setup(usedBy, skillDef, skillLevel);
-            thing = thing.MakeMinified();
-            GenPlace.TryPlaceThing(thing, parent.Position, parent.Map, ThingPlaceMode.Direct);
+            if (Skyshards_ModSettings.EnableInertSkyshards)
+            {
+                Thing thing = ThingMaker.MakeThing(ThingDefOf.ESCP_SkyshardSculpture);
+                thing.TryGetComp<Comp_SkyshardSculpture>().Setup(usedBy, skillDef, skillLevel);
+                thing = thing.MakeMinified();
+                GenPlace.TryPlaceThing(thing, parent.Position, parent.Map, ThingPlaceMode.Direct);
+            }
 
-            Messages.Message("ESCP_Skyshard_UsedMessage".Translate(usedBy.NameFullColored, skillLevel, skillDef.label), thing, MessageTypeDefOf.PositiveEvent, false);
+            Messages.Message("ESCP_Skyshard_UsedMessage".Translate(usedBy.NameFullColored, skillLevel, skillDef.label), usedBy, MessageTypeDefOf.PositiveEvent, false);
         }
     }
 }

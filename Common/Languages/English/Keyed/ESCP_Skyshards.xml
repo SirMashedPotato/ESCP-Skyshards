@@ -13,5 +13,19 @@
 	
 	<ESCP_Skyshard_Starfall_Label>Mass skyshard impact</ESCP_Skyshard_Starfall_Label>
 	<ESCP_Skyshard_Starfall_Description>Your {0} witness several skyshards fall nearby. This event has most likely not gone unnoticed by other factions, who may decide to seek out the skyshards themselves.</ESCP_Skyshard_Starfall_Description>
+	
+	<!-- Settings -->
+	<ESCP_Skyshard_ModName>ESCP - Skyshards</ESCP_Skyshard_ModName>
+	
+	<ESCP_Skyshard_MinLevelGained>The minimum skill level that can be given by skyshards.</ESCP_Skyshard_MinLevelGained>
+	<ESCP_Skyshard_MaxLevelGained>The maximum skill level that can be given by skyshards.</ESCP_Skyshard_MaxLevelGained>
+	<ESCP_Skyshard_DisableSkillCap>Disable the skill cap for skyshards.</ESCP_Skyshard_DisableSkillCap>
+	<ESCP_Skyshard_DisableSkillCap_Tooltip>Allows skyshards to increase a pawns skill beyond level 20.</ESCP_Skyshard_DisableSkillCap_Tooltip>
+	<ESCP_Skyshard_EnableStarfall>Enable the 'Mass skyshard impact' incident.</ESCP_Skyshard_EnableStarfall>
+	<ESCP_Skyshard_EnableInertSkyshards>Enable inert skyshards.</ESCP_Skyshard_EnableInertSkyshards>
+	<ESCP_Skyshard_EnableInertSkyshards_Tooltip>If enabled, you will gain an inert skyshard after having a pawn interact with a skyshard.\n\nInert skyshards are meant for those that wish to collect skyshards, and offer nothing beyond a high beauty value, and a sense of pride and accomplishment.</ESCP_Skyshard_EnableInertSkyshards_Tooltip>
+	
+	<ESCP_Reset>Reset all settings</ESCP_Reset>
+	
 
 </LanguageData>

@@ -21,10 +21,9 @@
 	<letterDef>NewQuest</letterDef>
     <category>Misc</category>
     <targetTags>
-      <li>World</li>
 	  <li>Map_PlayerHome</li>
     </targetTags>
-    <workerClass>ESCP_Skyshards.IncidentWorker_SkyshardStarfall</workerClass>
+    <workerClass>ESCP_Skyshards.IncidentWorker_SkyshardStarfall_Reward</workerClass>
     <baseChance>0</baseChance>
 	<minRefireDays>0</minRefireDays>
 	<questScriptDef>ESCP_SkyshardLandingSite</questScriptDef>

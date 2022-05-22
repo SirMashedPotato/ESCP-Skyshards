@@ -22,7 +22,7 @@
 
 						<AchievementsExpanded.Reward_MapIncident>
 							<defName>ESCP_RewardSkyshardFall</defName>
-							<label>Trigger mass skyshard impact</label>
+							<label>Mass Skyshard Impact</label>
 							<tab>ESCP_AchievementsTab</tab>
 							<cost>75</cost>
 							<incident>ESCP_Skyshard_Starfall_Reward</incident>
