@@ -37,7 +37,7 @@
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<rotatable>true</rotatable>
 		<statBases>
-			<Beauty>80</Beauty>
+			<Beauty>800</Beauty>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>4</Mass>
 			<Flammability>0</Flammability>

@@ -27,7 +27,7 @@
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
 	  <Mass>3</Mass>
-      <Beauty>80</Beauty>
+      <Beauty>800</Beauty>
       <WorkToBuild>100</WorkToBuild>
       <MarketValue>400</MarketValue>
     </statBases>
