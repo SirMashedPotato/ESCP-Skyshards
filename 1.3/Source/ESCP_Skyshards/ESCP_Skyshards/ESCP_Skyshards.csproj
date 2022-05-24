@@ -64,7 +64,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestSites\GenStep_SkyshardSite.cs" />
     <Compile Include="QuestSites\SitePartWorker_SkyshardSite.cs" />
-    <Compile Include="Workers\IncidentWorker_SkyshardStarfall_Reward.cs" />
     <Compile Include="Workers\RitualAttachableOutcomeEffectWorker_TriggerSkyshardStarfall.cs" />
   </ItemGroup>
   <ItemGroup />
