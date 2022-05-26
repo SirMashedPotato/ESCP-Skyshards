@@ -19,7 +19,7 @@ namespace ESCP_Skyshards
             base.PostExposeData();
             Scribe_Defs.Look(ref skillDef, "skyshard_SkillDef");
             Scribe_Values.Look(ref skillLevel, "skyshard_SkillLevel", 1);
-            Scribe_Values.Look(ref site, "skyshard_Site");
+            Scribe_Deep.Look(ref site, "skyshard_Site");
         }
 
         public override void PostPostMake()
