@@ -22,6 +22,7 @@ namespace ESCP_Skyshards
 			{
 				Thing thing = ThingMaker.MakeThing(ThingDefOf.ESCP_SkyshardBuilding);
 				GenSpawn.Spawn(thing, root, map);
+				thing.TryGetComp<CompUseEffect_UseSkyshard>().site = parms.sitePart.site;
 			}
 		}
 

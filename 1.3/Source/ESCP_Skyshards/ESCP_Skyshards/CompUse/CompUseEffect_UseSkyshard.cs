@@ -2,6 +2,7 @@
 using RimWorld;
 using UnityEngine;
 using Verse.Sound;
+using RimWorld.Planet;
 
 namespace ESCP_Skyshards
 {
@@ -11,12 +12,14 @@ namespace ESCP_Skyshards
 
         private SkillDef skillDef = null;
         private int skillLevel = 0;
+        public Site site;
 
         public override void PostExposeData()
         {
             base.PostExposeData();
             Scribe_Defs.Look(ref skillDef, "skyshard_SkillDef");
             Scribe_Values.Look(ref skillLevel, "skyshard_SkillLevel", 1);
+            Scribe_Values.Look(ref site, "skyshard_Site");
         }
 
         public override void PostPostMake()
@@ -77,6 +80,12 @@ namespace ESCP_Skyshards
                 thing.TryGetComp<Comp_SkyshardSculpture>().Setup(usedBy, skillDef, skillLevel);
                 thing = thing.MakeMinified();
                 GenPlace.TryPlaceThing(thing, parent.Position, parent.Map, ThingPlaceMode.Direct);
+            }
+
+            //completeing quest
+            if (site != null)
+            {
+                QuestUtility.SendQuestTargetSignals(site.questTags, "SkyshardUsed", this.Named("SUBJECT"));
             }
 
             Messages.Message("ESCP_Skyshard_UsedMessage".Translate(usedBy.NameFullColored, skillLevel, skillDef.label), usedBy, MessageTypeDefOf.PositiveEvent, false);

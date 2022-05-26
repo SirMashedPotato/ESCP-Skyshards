@@ -128,6 +128,12 @@
           <node Class="QuestNode_End">
           </node>
         </li>
+		
+		<li Class="QuestNode_End">
+			<inSignal>site.SkyshardUsed</inSignal>
+			<outcome>Success</outcome>
+		</li>
+		
       </nodes>
     </root>
   </QuestScriptDef>
