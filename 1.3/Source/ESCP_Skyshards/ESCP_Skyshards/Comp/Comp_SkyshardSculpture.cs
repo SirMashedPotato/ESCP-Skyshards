@@ -15,7 +15,7 @@ namespace ESCP_Skyshards
             base.PostExposeData();
             Scribe_Defs.Look(ref skillDef, "skyshard_SkillDef");
             Scribe_Values.Look(ref skillLevel, "skyshard_SkillLevel", 1);
-            Scribe_Values.Look(ref usedByName, "skyshard_SkillLevel", "");
+            Scribe_Values.Look(ref usedByName, "skyshard_UsedByName", "");
         }
 
         public override string CompInspectStringExtra()
