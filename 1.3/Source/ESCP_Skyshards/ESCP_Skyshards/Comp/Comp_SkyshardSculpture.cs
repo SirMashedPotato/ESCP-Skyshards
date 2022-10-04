@@ -20,7 +20,7 @@ namespace ESCP_Skyshards
 
         public override string CompInspectStringExtra()
         {
-            return skillDef != null ? "ESCP_Skyshard_SculptureDetails".Translate(usedByName, skillLevel, skillDef.label) : null;
+            return skillDef != null ? "ESCP_Skyshard_SculptureDetails".Translate(usedByName, skillLevel, skillDef.label) : "ESCP_Skyshard_SculptureDetails_Unknown".Translate();
         }
 
         public void Setup(Pawn usedBy, SkillDef skill, int level)

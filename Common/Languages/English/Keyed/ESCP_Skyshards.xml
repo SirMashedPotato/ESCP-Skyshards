@@ -10,6 +10,7 @@
 	<ESCP_Skyshard_UsedMessage>{0} has used a skyshard, gaining {1} levels in {2}</ESCP_Skyshard_UsedMessage>
 	
 	<ESCP_Skyshard_SculptureDetails>This skyshard was used by {0}, granting {1} levels of {2}.</ESCP_Skyshard_SculptureDetails>
+	<ESCP_Skyshard_SculptureDetails_Unknown>Details of use are unknown.</ESCP_Skyshard_SculptureDetails_Unknown>
 	
 	<ESCP_Skyshard_Starfall_Label>Mass skyshard impact</ESCP_Skyshard_Starfall_Label>
 	<ESCP_Skyshard_Starfall_Description>Your {0} witness several skyshards fall nearby. This event has most likely not gone unnoticed by other factions, who may decide to seek out the skyshards themselves.</ESCP_Skyshard_Starfall_Description>

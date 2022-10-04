@@ -1,11 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <RecordDef>
-    <defName>ESCP_SkyshardsUsed</defName>
-    <label>skyshards touched</label>
-    <description>The number of times I have touched a skyshard.</description>
-    <type>Int</type>
-  </RecordDef>
- 
+	<RecordDef>
+		<defName>ESCP_SkyshardsUsed</defName>
+		<label>skyshards touched</label>
+		<description>The number of times I have touched a skyshard.</description>
+		<type>Int</type>
+	</RecordDef>
 </Defs>

@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
 	<ThingDef ParentName="BuildingBase">
 		<defName>ESCP_SkyshardBuilding</defName>
 		<label>skyshard</label>
@@ -31,8 +30,8 @@
 			</li>
 		</comps>
 		<building>
-		  <deconstructible>false</deconstructible>
-		  <claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
 		</building>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<rotatable>true</rotatable>
@@ -54,5 +53,4 @@
 		<size>(1,1)</size>
 		<blockPlants>true</blockPlants>
 	</ThingDef>
-
- </Defs>
+</Defs>
