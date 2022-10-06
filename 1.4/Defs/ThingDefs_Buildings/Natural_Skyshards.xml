@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>ESCP_SkyshardBuilding</defName>
+		<label>skyshard</label>
+		<description>A strange crystalline shard, fallen from the stars. Each skyshard contains within it untold knowledge, which can be gained by interacting with the shard.\n\nA strange energy prevents the skyshard from being moved.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Misc/ESCP_Skyshard</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.3, 1.3)</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(83,104,124,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Use skyshard</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicSoothePulserCast</sound>
+			</li>
+			<li>
+				<compClass>ESCP_Skyshards.CompUseEffect_UseSkyshard</compClass>
+			</li>
+		</comps>
+		<building>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>true</rotatable>
+		<statBases>
+			<Beauty>800</Beauty>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>4</Mass>
+			<Flammability>0</Flammability>
+			<MarketValue>800</MarketValue>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+		<fillPercent>0.5</fillPercent>
+		<destroyable>true</destroyable>
+		<useHitPoints>true</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<size>(1,1)</size>
+		<blockPlants>true</blockPlants>
+	</ThingDef>
+</Defs>

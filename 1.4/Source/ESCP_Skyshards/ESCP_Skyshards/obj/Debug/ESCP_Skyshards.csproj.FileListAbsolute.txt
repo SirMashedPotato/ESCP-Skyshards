@@ -1,0 +1,8 @@
+J:\Modding\Github\ESCP-Skyshards\1.3\Assemblies\ESCP_Skyshards.dll
+J:\Modding\Github\ESCP-Skyshards\1.3\Source\ESCP_Skyshards\ESCP_Skyshards\obj\Debug\ESCP_Skyshards.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Skyshards\1.3\Source\ESCP_Skyshards\ESCP_Skyshards\obj\Debug\ESCP_Skyshards.dll
+J:\Modding\Github\ESCP-Skyshards\1.3\Source\ESCP_Skyshards\ESCP_Skyshards\obj\Debug\ESCP_Skyshards.csproj.AssemblyReference.cache
+J:\Modding\Github\ESCP-Skyshards\1.4\Source\ESCP_Skyshards\ESCP_Skyshards\obj\Debug\ESCP_Skyshards.csproj.AssemblyReference.cache
+J:\Modding\Github\ESCP-Skyshards\1.4\Source\ESCP_Skyshards\ESCP_Skyshards\obj\Debug\ESCP_Skyshards.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Skyshards\1.4\Source\ESCP_Skyshards\ESCP_Skyshards\obj\Debug\ESCP_Skyshards.dll
+J:\Modding\Github\ESCP-Skyshards\1.4\Assemblies\ESCP_Skyshards.dll
