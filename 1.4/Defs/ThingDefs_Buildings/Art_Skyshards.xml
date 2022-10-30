@@ -39,7 +39,7 @@
 			</li>
 		</comps>
 		<building>
-			<deconstructible>false</deconstructible>
+			<deconstructible>true</deconstructible>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 	</ThingDef>
