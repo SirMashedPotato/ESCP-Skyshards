@@ -15,6 +15,9 @@
 				<glowRadius>3</glowRadius>
 				<glowColor>(83,104,124,0)</glowColor>
 			</li>
+			<li Class="CompProperties_Effecter">
+				<effecterDef>ESCP_SkyshardEffecter</effecterDef>
+			</li>
 			<li Class="CompProperties_Usable">
 				<useJob>UseArtifact</useJob>
 				<useLabel>Use skyshard</useLabel>
