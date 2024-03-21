@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<RitualAttachableOutcomeEffectDef>
 		<defName>ESCP_Skyshard_StarfallTriggered</defName>
 		<label>trigger mass skyshard impact</label>
@@ -10,9 +9,8 @@
 		<requiredMemeAny>
 		</requiredMemeAny>
 		<disallowedRituals>
-		  <li>FuneralStandard</li>
-		  <li>FuneralNoCorpse</li>
+			<li>FuneralStandard</li>
+			<li>FuneralNoCorpse</li>
 		</disallowedRituals>
 	</RitualAttachableOutcomeEffectDef>
-  
 </Defs>
