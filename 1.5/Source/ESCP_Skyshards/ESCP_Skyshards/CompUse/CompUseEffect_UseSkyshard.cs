@@ -61,22 +61,18 @@ namespace ESCP_Skyshards
 
         public override void DoEffect(Pawn usedBy)
         {
-            Log.Message("1");
             usedBy.records.Increment(RecordDefOf.ESCP_SkyshardsUsed);
             FleckMaker.AttachedOverlay(usedBy, FleckDefOf.PsycastAreaEffect, Vector3.zero, 1f, -1f);
             SkillRecord sr = usedBy.skills.skills.Find(x => x.def == skillDef);
-            Log.Message("2");
             //ensuring the added levels don't go over 20
             bool flag = Skyshards_ModSettings.DisableSkillCap;
             int temp = sr.levelInt + skillLevel;
             sr.levelInt = !flag ? Mathf.Clamp(temp, 1, 20) : temp;
-            Log.Message("3");
             //completeing quest
             if (site != null)
             {
                 QuestUtility.SendQuestTargetSignals(site.questTags, "SkyshardUsed", this.Named("SUBJECT"));
             }
-            Log.Message("4");
             Messages.Message("ESCP_Skyshard_UsedMessage".Translate(usedBy.NameFullColored, skillLevel, skillDef.label), usedBy, MessageTypeDefOf.PositiveEvent, false);
 
             //creating inert skyshard
@@ -87,7 +83,6 @@ namespace ESCP_Skyshards
                 thing = thing.MakeMinified();
                 GenPlace.TryPlaceThing(thing, parent.Position, parent.Map, ThingPlaceMode.Near);
             }
-            Log.Message("5");
         }
     }
 }
