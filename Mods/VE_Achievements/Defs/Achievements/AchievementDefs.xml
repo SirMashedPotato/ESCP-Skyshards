@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AchievementsExpanded.AchievementDef>
+		<defName>ESCP_AchievementSkyshard_First</defName>
+		<label>Skyshard Novice</label>
+		<description>Have a pawn interact with a skyshard for the first time</description>
+		<bgtexPath>Achievements/ESCP_AchievementBackground</bgtexPath>
+		<tab>ESCP_AchievementsTab</tab>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>ESCP_SkyshardsUsed</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSkyshard_First</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef>
+		<defName>ESCP_AchievementSkyshard_Many</defName>
+		<label>Skyshard Adept</label>
+		<description>Have a pawn interact with a skyshard for the fifth time</description>
+		<bgtexPath>Achievements/ESCP_AchievementBackground</bgtexPath>
+		<tab>ESCP_AchievementsTab</tab>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>ESCP_SkyshardsUsed</def>
+			<count>5</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSkyshard_Many</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef>
+		<defName>ESCP_AchievementSkyshard_More</defName>
+		<label>Skyshard Master</label>
+		<description>Have a pawn interact with a skyshard for the tenth time</description>
+		<bgtexPath>Achievements/ESCP_AchievementBackground</bgtexPath>
+		<tab>ESCP_AchievementsTab</tab>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>ESCP_SkyshardsUsed</def>
+			<count>10</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSkyshard_More</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

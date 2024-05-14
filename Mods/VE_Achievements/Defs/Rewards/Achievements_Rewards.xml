@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AchievementsExpanded.Reward_MapIncident>
+		<defName>ESCP_RewardSkyshardFall</defName>
+		<label>Mass Skyshard Impact</label>
+		<tab>ESCP_AchievementsTab</tab>
+		<cost>75</cost>
+		<incident>ESCP_Skyshard_Starfall_Reward</incident>
+	</AchievementsExpanded.Reward_MapIncident>
+</Defs>
