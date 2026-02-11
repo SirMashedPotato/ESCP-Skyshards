@@ -8,6 +8,7 @@
 		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
 		<expandingIconTexture>World/WorldObjects/ESCP_Skyshard_Icon</expandingIconTexture>
 		<handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+		<gravShipsCanLandOn>true</gravShipsCanLandOn>
 		<tags>
 			<li>ESCP_SkyshardLandingSite</li>
 		</tags>
