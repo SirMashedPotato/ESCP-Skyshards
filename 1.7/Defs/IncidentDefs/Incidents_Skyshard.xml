@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<IncidentDef>
+		<defName>ESCP_Skyshard_Starfall</defName>
+		<label>mass skyshard impact</label>
+		<letterDef>NewQuest</letterDef>
+		<category>Misc</category>
+		<targetTags>
+			<li>World</li>
+		</targetTags>
+		<workerClass>ESCP_Skyshards.IncidentWorker_SkyshardStarfall</workerClass>
+		<baseChance>0.3</baseChance>
+		<minRefireDays>30</minRefireDays>
+		<questScriptDef>ESCP_SkyshardLandingSite</questScriptDef>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>ESCP_Skyshard_Starfall_Reward</defName>
+		<label>mass skyshard impact</label>
+		<letterDef>NewQuest</letterDef>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>ESCP_Skyshards.IncidentWorker_SkyshardStarfall</workerClass>
+		<baseChance>0</baseChance>
+		<minRefireDays>0</minRefireDays>
+		<questScriptDef>ESCP_SkyshardLandingSite</questScriptDef>
+	</IncidentDef>
+</Defs>

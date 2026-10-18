@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_SkyshardEffecter]========== -->
+	<EffecterDef>
+		<defName>ESCP_SkyshardEffecter</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<scale>10</scale>
+				<positionRadius>0</positionRadius>
+				<ticksBetweenMotes>250</ticksBetweenMotes>
+				<moteDef>ESCP_SkyshardBeamMote</moteDef>
+				<speed>0</speed>
+				<angle>0~0</angle>
+				<rotation>0~0</rotation>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+				<scale>0.3~0.5</scale>
+				<chancePerTick>0.02</chancePerTick>
+				<positionRadius>1</positionRadius>
+				<moteDef>ESCP_SkyshardStarMote</moteDef>
+				<speed>0.18~0.18</speed>
+				<angle>340~20</angle>
+			</li>
+		</children>
+	</EffecterDef>
+	<!-- ==========[ESCP_SkyshardBeamMote]========== -->
+	<ThingDef ParentName="MoteBase">
+		<defName>ESCP_SkyshardBeamMote</defName>
+		<graphicData>
+			<texPath>Things/Mote/ESCP_SkyshardBeamMote</texPath>
+			<drawSize>(0.4, 0.8)</drawSize>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
+		<mote>
+			<fadeInTime>2</fadeInTime>
+			<solidTime>0.5</solidTime>
+			<fadeOutTime>2</fadeOutTime>
+			<attachedDrawOffset>(0, 0, 3)</attachedDrawOffset>
+		</mote>
+	</ThingDef>
+	<!-- ==========[ESCP_SkyshardStarMote]========== -->
+	<ThingDef ParentName="MoteBase">
+		<defName>ESCP_SkyshardStarMote</defName>
+		<graphicData>
+			<texPath>Things/Mote/ESCP_SkyshardStarMote</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<fadeInTime>0.50</fadeInTime>
+			<solidTime>1.5</solidTime>
+			<fadeOutTime>2</fadeOutTime>
+			<attachedDrawOffset>(0.2, 0, 0.2)</attachedDrawOffset>
+		</mote>
+	</ThingDef>
+</Defs>
